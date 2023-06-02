@@ -8,13 +8,35 @@ class Application < Sinatra::Base
   # without having to restart the server.
 
 
-  get '/hello' do
-    name = params[:name]
-
-    return "Hello #{name}"
-  end 
 
 
+
+  # post '/submit' do
+    
+  #   name = params[:name]
+  #   message = params[:message]
+
+  #   "Thanks Noah, you sent this message:#{message}"
+
+  # end
+
+  get '/names' do  
+    names = params[:name]
+    return "#{names}"
+  end
+
+
+
+
+
+
+
+
+  # get '/hello' do
+  #   name = params[:name]
+
+  #   return "Hello #{name}"
+  # end 
 
 
   # get '/' do
